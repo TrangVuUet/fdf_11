@@ -4,6 +4,14 @@ en:
   title: "Eat only natural food"
   call_us: "Call us at"
   phone: "0902004984"
+  users:
+    registrations:
+      edit:
+        title: "Edit"
+    index:
+      edit_link: "Edit"
+      destroy_link: "Destroy"
+      sure_msg: "Are you sure?"
   devise:
     confirmations:
       confirmation_title: "Resend confirmation instructions"

@@ -1,0 +1,14 @@
+<h3>All Users</h3>
+<h1><%= @users.first.email %></h1>
+<td>
+  <% if can? :update, @users.first %>
+    <%= link_to t(".edit_link"), edit_user_registration(@users.first) %>
+  <% end %>
+</td>
+
+<td>
+  <% if can? :destroy, @users.first %>
+    <%= link_to t(".destroy_link"), item, method: :delete,
+      data: { confirm: t(".sure_msg") } %>
+  <% end %>
+</td>
